@@ -5,6 +5,16 @@ Captures SQS statistics from Amazon CloudWatch and displays them in the AppDynam
 
 **Note : By default, the Machine agent can only send a fixed number of metrics to the controller. This extension potentially reports thousands of metrics, so to change this limit, please follow the instructions mentioned [here](https://docs.appdynamics.com/display/PRO40/Metrics+Limits).** 
 
+##Prerequisite
+
+If you don't want to provide awsAccessKey and awsSecretKey, please run the extension on EC2 instance and configure Instance Profile by granting below permissions
+
+~~~
+"cloudwatch:GetMetricData",
+"cloudwatch:GetMetricStatistics",
+"cloudwatch:ListMetrics"
+~~~
+
 ##Installation
 
 1. Run 'mvn clean install' from aws-sqs-monitoring-extension
