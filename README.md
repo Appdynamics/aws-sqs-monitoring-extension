@@ -107,7 +107,12 @@ concurrencyConfig:
   noOfRegionThreadsPerAccount: 3
   noOfMetricThreadsPerRegion: 3
 
-metricPrefix: "Custom Metrics|Amazon SQS|"
+#This will create this metric in all the tiers, under this path. Please make sure to have a trailing |
+#metricPrefix: "Custom Metrics|Amazon SQS|"
+
+#This will create it in specific Tier aka Component. Replace <COMPONENT_ID>. Please make sure to have a trailing |.
+#To find out the COMPONENT_ID, please see the screen shot here https://docs.appdynamics.com/display/PRO42/Build+a+Monitoring+Extension+Using+Java
+metricPrefix: "Server|Component:<COMPONENT_ID>|Custom Metrics|Amazon SQS|"
 ~~~
 
 ###AWS Credentials Encryption
