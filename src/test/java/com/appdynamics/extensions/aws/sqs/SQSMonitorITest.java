@@ -23,7 +23,7 @@ public class SQSMonitorITest {
 	@Test
 	public void testMetricsCollectionCredentialsEncrypted() throws Exception {
 		Map<String, String> args = Maps.newHashMap();
-		args.put("config-file","src/test/resources/conf/itest-encrypted-config.yaml");
+		args.put("config-file","src/test/resources/conf/itest-encrypted-config.yml");
 		
 		TaskOutput result = classUnderTest.execute(args, null);
 		assertTrue(result.getStatusMessage().contains("successfully completed"));
@@ -32,7 +32,7 @@ public class SQSMonitorITest {
 	@Test
 	public void testMetricsCoyllectionWithProxy() throws Exception {
 		Map<String, String> args = Maps.newHashMap();
-		args.put("config-file","src/test/resources/conf/itest-proxy-config.yaml");
+		args.put("config-file","src/test/resources/conf/itest-proxy-config.yml");
 		
 		TaskOutput result = classUnderTest.execute(args, null);
 		assertTrue(result.getStatusMessage().contains("successfully completed"));
