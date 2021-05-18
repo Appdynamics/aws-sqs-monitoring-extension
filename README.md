@@ -146,9 +146,9 @@ Always feel free to fork and contribute any changes directly via [GitHub](https:
 ## Version
    |Name|Version|
    |--------------------------|------------|
-   |Extension Version         |1.0.5       |
-   |Controller Compatibility  |4.4 or Later|
+   |Extension Version         |1.0.6       |
+   |Controller Compatibility  |4.5 or Later|
    |Machine Agent             |4.5.13+     |
-   |Last Update               |01/20/2021  |
+   |Last Update               |18/05/2021  |
 
 List of changes to this extension can be found [here](https://github.com/Appdynamics/aws-sqs-monitoring-extension/blob/master/CHANGELOG.md)
